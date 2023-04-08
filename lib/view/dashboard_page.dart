@@ -8,8 +8,47 @@ class DashBoard extends StatefulWidget {
 }
 
 class _DashBoardState extends State<DashBoard> {
+  int indexCurrent = 0;
+  PageController pageController = PageController();
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: bodyPage(),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: indexCurrent,
+        onTap: (value){
+          setState(() {
+            indexCurrent = value;
+            pageController.jumpToPage(value);
+          });
+        },
+        items: const [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: "Personnes"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.favorite),
+              label: "Favoris"
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget bodyPage(){
+    return PageView(
+      controller: pageController,
+      onPageChanged: (value){
+        setState(() {
+          pageController.jumpToPage(value);
+          indexCurrent = value;
+        });
+      },
+      children: [
+        Text("Personnes"),
+        Text("Favoris")
+      ],
+    );
   }
 }

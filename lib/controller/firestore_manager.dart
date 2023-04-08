@@ -6,6 +6,7 @@ import 'package:messageriemydigitalschool/model/Utilisateur.dart';
 class FirestoreManager{
   final auth = FirebaseAuth.instance;
   final cloudUsers = FirebaseFirestore.instance.collection("UTILISATEURS");
+  final cloudMessages = FirebaseFirestore.instance.collection("MESSAGES");
 
 
 

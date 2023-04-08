@@ -30,6 +30,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
   Widget bodyPage(){
     return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
       TextField(
             controller: mailController,
@@ -46,7 +47,8 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
           ),
         TextField(
-          controller: mailController,
+          controller: passwordController,
+          obscureText: true,
           decoration: InputDecoration(
               prefixIcon: const Icon(Icons.lock),
               hintText: "Entrer votre password",
@@ -60,7 +62,7 @@ class _RegisterPageState extends State<RegisterPage> {
           ),
         ),
         TextField(
-          controller: mailController,
+          controller: prenomController,
           decoration: InputDecoration(
               prefixIcon: const Icon(Icons.person),
               hintText: "Entrer votre prénom",
@@ -74,7 +76,7 @@ class _RegisterPageState extends State<RegisterPage> {
           ),
         ),
         TextField(
-          controller: mailController,
+          controller: nomController,
           decoration: InputDecoration(
               prefixIcon: const Icon(Icons.person),
               hintText: "Entrer votre nom",
