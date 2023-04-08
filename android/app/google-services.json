@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "816651953206",
+    "project_id": "messagerie-44b9c",
+    "storage_bucket": "messagerie-44b9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816651953206:android:84499487bd06137da7a497",
+        "android_client_info": {
+          "package_name": "com.example.messageriemydigitalschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816651953206-keahboa6oenh8gc2jhn9csgtu6krd4fp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvCPwiU346PsanZFn7qbDCYlyjOn8efb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816651953206-keahboa6oenh8gc2jhn9csgtu6krd4fp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
